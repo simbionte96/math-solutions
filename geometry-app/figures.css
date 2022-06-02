@@ -1,0 +1,114 @@
+:root {
+  --primary-color: black;
+  --secondary-color: #F6DF1C;
+  --tertiary-color: #EEEEEE;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-content {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: var(--secondary-color);
+}
+
+.header-content p {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.header-content_link {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-content_link a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.main_description {
+  margin: 25px;
+}
+
+.main_description-title {
+  margin: 25px auto;
+  font-size: 3.5rem;
+  line-height: 5rem;
+}
+
+.main_description-content {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 25px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  margin: 25px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.card-1_title,
+.card-2_title,
+.card-3_title {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+}
+
+.card-1 form,
+.card-2 form,
+.card-3 form {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  color: var(--tertiary-color);
+}
+
+.form label {
+  margin-bottom: 15px;
+}
+
+.form input {
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: var(--secondary-color);
+  color: black;
+}

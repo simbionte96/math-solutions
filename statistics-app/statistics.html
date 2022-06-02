@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./statistics.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <p>Math Solutions</p>
+      <p class="header-content_link"><a href="../index.html">home</a></p>
+    </div>
+  </header>
+  <main class="main-container">
+    <div class="main_description">
+      <h1 class="main_description-title">Estadística Básica</h1>
+      <p class="main_description-content">En esta aplicación podrás hallar el promedio, la moda y la mediana de un set de datos.</p>
+    </div>
+    <section class="cards-container">
+      <div class="card-1">
+        <h2 class="card-1_title">Promedio</h2>
+        <form class="form">
+          <label></label>
+          <input type="text" id="input-list-1" placeholder="1, 2, 3, 4, 5">
+          <button type="button" onclick="calculateAverageFromUser()">Calcular</button>
+          <p id="result-1"></p>
+        </form> 
+      </div>
+      <div class="card-2">
+        <h2 class="card-2_title">Mediana</h2>
+        <form class="form">
+          <label for="set-input"></label>
+          <input type="text" id="input-list-2" placeholder="6, 7, 8, 9, 10">
+          <button type="button" onclick="calculateMedianFromUser()">Calcular</button>
+          <p id="result-2"></p>
+        </form>
+      </div>
+      <div class="card-3">
+        <h2 class="card-3_title">Moda</h2>
+        <form class="form">
+          <label></label>
+          <input type="text" id="input-list-3" placeholder="6, 6, 8, 9, 10">
+          <button type="button" onclick="calculateModeFromUser()">Carcular</button>
+          <p id="result-3"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="statistics.js"></script>
+</body>
+</html>

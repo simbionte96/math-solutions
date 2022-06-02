@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./percentage.css">
+  <title>Porcentaje</title>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <p>Math Solutions</p>
+      <p class="header-content_link"><a href="../index.html">home</a></p>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="main_description">
+        <h1 class="main_description-title">Descuentos</h1>
+        <p class="main_description-content">En esta aplicación podrás calcular el descuento sobre un valor.</p>
+      </div>
+    </section>
+    <section class="card-container">
+      <div class="card-1">
+        <h1 class="card-1_title">Calcula cualquier porcentaje de descuento que necesites</h1>
+        <form class="form">
+          <label for="value">Escribe tu valor original</label>
+          <input type="number" id="input-value">
+          <label for="discount">Escribe el porcentaje a descontar</label>
+          <input type="number" id="input-discount">
+          <button type="button" onclick="calculate()">Calcular</button>
+          <p id="result"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="percentage.js"></script>
+</body>
+</html>

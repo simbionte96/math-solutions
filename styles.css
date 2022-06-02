@@ -1,0 +1,127 @@
+/* 
+1. Positioning
+2. Box Model and grid
+3. Tipography
+4. Visuals
+5. Others
+*/
+
+:root {
+  --primary-color: black;
+  --secondary-color: #F6DF1C;
+  --tertiary-color: #EEEEEE;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+.header-content {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-content_figure{
+  width: 50px;
+  height: 50px;
+}
+
+.header-content_figure-img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-content_link {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-content_link a {
+  text-decoration: none;
+  color: #F6DF1C;
+}
+
+.main_description {
+  margin: 25px;
+}
+
+.main_description-title {
+  margin: 25px auto;
+  font-size: 3.5rem;
+  line-height: 5rem;
+}
+
+.main_description-content {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.main_description-list {
+  list-style: none;
+  font-size: 2rem;
+  line-height: 2.5rem;;
+}
+
+.main_nav-apps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+}
+
+.nav-apps_container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 5px 5px 0px 5px;
+  background-color: black;
+}
+
+.nav-apps_container a {
+  text-decoration: none;
+  color: black;
+}
+
+.app-card-1,
+.app-card-2,
+.app-card-3 {
+  padding: 5px;
+  text-align: center;
+  color: var(--tertiary-color);
+  background-color: var(black);
+  margin-bottom: 5px;
+}
+
+.app-card-1:hover,
+.app-card-2:hover,
+.app-card-3:hover {
+  color: black;
+  background-color: var(--secondary-color);
+  transition: 0.5s;
+}
+
+.app-card-1 h3,
+.app-card-2 h3,
+.app-card-3 h3 {
+  font-size: 2.5rem;
+}
+
+.app-card-1 p,
+.app-card-2 p,
+.app-card-3 p {
+  font-size: 2rem;
+}

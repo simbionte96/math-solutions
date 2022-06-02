@@ -47,7 +47,8 @@ function calculateSquarePerimeter() {
 	const value = input.value;
 
 	const perimeter = squarePerimeter(value);
-	alert(perimeter);
+	const result = document.getElementById("square-perimeter-result");
+ 	result.innerText = "El perímetro de tu cuadrado mide " + perimeter + " cm";
 }
 
 
@@ -56,7 +57,8 @@ function calculateSquareArea() {
 	const value = input.value;
 
 	const area = squareArea(value);
-	alert(area);
+	const result = document.getElementById("square-area-result");
+	result.innerText = "El área de tu cuadrado mide " + area + " cm²";
 }
 
 
@@ -70,7 +72,8 @@ function calculateTrianglePerimeter() {
 	const valueOfBase = Number(base.value);
 
 	const perimeter = trianglePerimeter(valueOfSide1, valueOfSide2, valueOfBase);
-	alert(perimeter);
+	const result = document.getElementById("triangle-perimeter-result");
+	result.innerText = "El perímetro de tu triangulo mide " + perimeter + " cm";
 }
 
 
@@ -81,7 +84,8 @@ function calculateTriangleArea() {
 	const valueOfHeight = Number(height.value);
 	
 	const area = triangleArea(valueOfHeight, valueOfBase);
-	alert(area);
+	const result = document.getElementById("triangle-area-result");
+	result.innerText = "El área de tu triangulo mide " + area + " cm²";
 }
 
 
@@ -91,7 +95,8 @@ function calculateCircleCircumference() {
 	const valueOfRadius = Number(radius.value);
 
 	const circumference = circleCircumference(valueOfRadius);
-	alert(circumference);
+	const result = document.getElementById("circle-circumference-result");
+	result.innerText = "La circunferencia de tu circulo mide: " + circumference + " cm";
 }
 
 
@@ -100,5 +105,8 @@ function calculateCircleArea() {
 	const valueOfRadius = Number(radius.value);
 
 	const area = circleArea(valueOfRadius);
-	alert(area);
+	const result = document.getElementById("circle-area-result");
+  result.innerText = "El área de tu circulo mide: " + area + " cm²";
 }
+
+
